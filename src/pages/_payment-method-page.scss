@@ -2,6 +2,7 @@
 @import "../components/styles/payment-methods";
 @import "../components/styles/payment-info";
 @import "../components/styles/footer";
+@import "../styles/base.scss";
 
 .payment-method {
   padding: 5vh;
@@ -13,4 +14,14 @@
     "header header"
     "methods info"
     "footer footer";
+  @media only screen and (max-width: $landscape-up) {
+    background-color: aqua;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "methods"
+      "info"
+      "footer";
+  }
 }
