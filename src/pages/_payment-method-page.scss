@@ -1,0 +1,16 @@
+@import "../components/styles/header";
+@import "../components/styles/payment-methods";
+@import "../components/styles/payment-info";
+@import "../components/styles/footer";
+
+.payment-method {
+  padding: 5vh;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "header header"
+    "methods info"
+    "footer footer";
+}
