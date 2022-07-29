@@ -2,20 +2,21 @@
 @import "../components/styles/payment-methods";
 @import "../components/styles/payment-info";
 @import "../components/styles/footer";
+@import "../components/styles/payment-card";
 @import "../styles/base.scss";
 
 .payment-method {
   padding: 5vh;
-  height: 90vh;
+  min-height: 90vh;
   display: grid;
-  grid-template-columns: 65% 35%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: $color-background;
   grid-template-areas:
     "header header"
     "methods info"
     "footer footer";
   @media only screen and (max-width: $landscape-up) {
-    background-color: aqua;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -24,4 +25,39 @@
       "info"
       "footer";
   }
+}
+
+button {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+  @media only screen and (max-width: $landscape-up) {
+    min-height: 40px;
+  }
+}
+
+p {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
 }
