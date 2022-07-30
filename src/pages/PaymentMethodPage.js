@@ -8,10 +8,10 @@ import "./_payment-method-page.scss";
 function PaymentMethodPage() {
   return (
     <div className="payment-method">
-      <Header />
-      <PaymentMethods />
-      <PaymentInfo />
-      <Footer />
+        <Header />
+        <PaymentMethods />
+        <PaymentInfo />
+        <Footer />
     </div>
   );
 }

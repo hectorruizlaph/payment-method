@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { PaymentMethodsContext } from "../context/PaymentMethodContext";
 
 function PaymentInfo() {
+  const { activeMethod } = useContext(PaymentMethodsContext);
+  console.log(activeMethod)
+
   return (
     <div className="payment-method-info">
       <div className="payment-method-info__v-ruler"></div>
@@ -15,7 +19,7 @@ function PaymentInfo() {
               <p>Metodo de pago</p>
             </div>
             <div className="payment-method-info__data-item-right">
-              <h2>Master Card</h2>
+              <h2>{activeMethod.method.text}</h2>
             </div>
           </div>
           <div className="payment-method-info__data-item">
@@ -23,7 +27,7 @@ function PaymentInfo() {
               <p>Tarjeta</p>
             </div>
             <div className="payment-method-info__data-item-right">
-              <h2>****2090</h2>
+              <h2>{activeMethod.number}</h2>
             </div>
           </div>
           <div className="payment-method-info__data-item">
@@ -39,7 +43,7 @@ function PaymentInfo() {
               <p>Pagos mensuales de</p>
             </div>
             <div className="payment-method-info__data-item-right">
-              <h2>$ 15,000 MXN</h2>
+              <h2>$ {activeMethod.amount} MXN</h2>
             </div>
           </div>
 

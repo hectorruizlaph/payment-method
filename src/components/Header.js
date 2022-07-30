@@ -13,7 +13,6 @@ function Header() {
           <button>- METODO DE PAGO</button>
         </div>
       </div>
-      <div className="payment-method-heder__h-ruler"></div>
     </div>
   );
 }
