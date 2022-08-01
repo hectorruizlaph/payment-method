@@ -81,7 +81,7 @@ function PaymentInfo() {
                   <p>I.V.A (16% DE impuesto)</p>
                 </div>
                 <div className="payment-method-info__data-last-item-section-item-right">
-                  <p>I.V.A (16% DE impuesto)</p>
+                  <p>I.V.A (16% del importe)</p>
                 </div>
               </div>
               <div className="payment-method-info__data-last-item-section-item">

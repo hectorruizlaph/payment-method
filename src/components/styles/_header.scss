@@ -5,7 +5,9 @@
   flex-direction: column;
   grid-area: header;
   border-bottom: 1px solid $color-grey-dark;
+  max-height: 5rem;
   @media only screen and (max-width: $landscape-up) {
+    max-height: 100%;
     align-items: center;
     justify-content: start;
   }
@@ -13,8 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 2rem;
     @media only screen and (max-width: $landscape-up) {
       flex-direction: column;
+      padding-bottom: 2rem;
     }
   }
   &__title-container {
@@ -25,18 +29,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 30rem;
     @media only screen and (max-width: $landscape-up) {
       width: 100%;
       margin: 3%;
-
     }
   }
   &__buttons-container button {
     display: inline-block;
-    font-size: 12px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    padding: 0.9rem 2rem;
     @media only screen and (max-width: $landscape-up) {
-      font-size: 0.6em;
+      padding: 0.9rem 1rem;
+      margin-left: 1.5rem;
+      font-size: 0.5rem;
     }
   }
 }
