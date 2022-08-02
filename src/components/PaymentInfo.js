@@ -35,7 +35,7 @@ function PaymentInfo() {
               <p>Dirección</p>
             </div>
             <div className="payment-method-info__data-item-right">
-              <h2>Banca Del Mundo # 35</h2>
+              <h2>Barranca Del Muerto # 35</h2>
             </div>
           </div>
           <div className="payment-method-info__data-item">

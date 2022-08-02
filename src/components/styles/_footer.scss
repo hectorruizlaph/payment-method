@@ -19,8 +19,9 @@
   &__buttons-container button {
     display: inline-block;
     font-size: 0.8rem;
-    font-weight: 800;
+    font-weight: 700;
     padding: 0.9rem 2rem;
+    font-family: 'Montserrat', sans-serif;
     @media only screen and (max-width: $landscape-up) {
       padding: 0.9rem 1rem;
       margin-left: 1.5rem;
